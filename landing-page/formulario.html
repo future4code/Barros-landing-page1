@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-formulario.css">
     <title>4cars</title>
-    <link rel="stylesheet" href="style.css">
-    
 </head>
+
 <body>
     <header class="header-container">
         <div class="header-wrapper">
@@ -15,53 +15,43 @@
                 <img src="img/4cars-fundo-transparente.png" alt="logo">
             </div>
             <nav class="items">
-
                 <a href="index.html">Home</a>
                 <a href="#faq">FAQs</a>
                 <a href="descricao.html">Saiba Mais</a>
                 <div class="button-header">
                 <a href="formulario.html">Quero Alugar</a>
-
             </div>
             </nav>
         </div>
     </header>
 
-    <main class="main-container">
-        <div class="about-us-container">
-            <div class="about-us-card">
-                <h1>Bem vinde ao 4cars</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <div class="saiba-mais">
-                    <a href="#cards"><p>Saiba mais</p></a>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="card-wrapper" id="cards">
-        <div class="card">
+    <div class="container">
+        <h1>Área do Cliente</h1>
+        <p>Por favor, preencha o formulário para criar uma conta.</p>
+        <hr>
 
-        </div>
-        <div class="card">
+        <label for="Nome"><b>Nome</b></label>
+        <input type="text" placeholder="Digite seu nome completo" name="nome" id="nome" required>
 
-        </div>
-        <div class="card">
-            
-        </div>
-    </section>
+        <label for="CPF"><b>CPF</b></label>
+        <input type="text" placeholder="Informe seu CPF" name="cpf" id="cpf" required>
 
-    <div class="faq-title">
-        <h1>Perguntas Frequentes</h1>
-</div>
+        <label for="E-mail"><b>E-mail</b></label>
+        <input type="text" placeholder="Informe seu e-mail" name="e-mail" id="e-mail" required>
 
+        <label for="Senha"><b>Senha</b></label>
+        <input type="password" placeholder="Insira uma senha" name="senha" id="senha" required>
+        <hr>
 
-    <section class="card-wrapper" id="faq">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <p>Ao criar uma conta, você concorda com nossos <a href="#">Termos & Privacidade</a>.</p>
+        <button type="submit" class="registrar"><b>CONFIRMAR</b></button>
+    </div>
 
-    </section>
-    
+    <div class="container acessar-conta">
+        <p>Já possui uma conta? <a href="#">Acessar conta</a>.</p>
+        <p>Esqueceu sua senha? <a href="#">Esqueci minha senha</a>.</p>
+    </div>
+
     <footer>
         <h3><b> 4CARS </b></h3>
         <p> Siga-nos nas redes sociais!</p>
