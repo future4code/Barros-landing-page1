@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,11 +60,33 @@
     border-radius: 10%;
     background-color: rgba(231, 39, 39, 0.712);
 }
-/* termina o cabecalho le */
+
+/* FINAL CABECARIO LE */
+
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+}
+
+ .card {
+    border-top: 5px solid red;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+
+} 
 
 
 
-/* comeca o footer vic */
+/* INICIO FOOTER */
+
 footer {
     text-align: center;
     background-color: rgba(231, 39, 39, 0.712);
@@ -112,14 +136,29 @@ footer {
             <nav class="items">
                 <a href="index.html">Home</a>
                 <a href="#faq">FAQs</a>
-                <a href="descricao.html">Saiba Mais</a>
+
+                <a href="index.html">Saiba Mais</a>
+
                 <div class="button-header">
                 <a href="formulario.html">Quero Alugar</a>
             </div>
             </nav>
         </div>
     </header>
-    
+
+    <section class="card-wrapper" id="cards">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+            
+        </div>
+    </section>
+
+
 
     <footer>
         <h3><b> 4CARS </b></h3>
