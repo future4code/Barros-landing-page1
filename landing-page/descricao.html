@@ -58,22 +58,113 @@
     border-radius: 10%;
     background-color: rgba(231, 39, 39, 0.712);
 }
+/* FINAL CABECARIO LE */
+
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+}
+
+ .card {
+    border-top: 5px solid red;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+
+} 
+
+
+
+/* INICIO FOOTER */
+footer {
+    text-align: center;
+    background-color: rgba(231, 39, 39, 0.712);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #ea4c89;
+    color: white;
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
 </style>
 <body>
     <header class="header-container">
         <div class="header-wrapper">
             <div class="site-logo">
-                <img src="img/4cars.png" alt="logo">
+                <img src="img/4cars-fundo-transparente.png" alt="logo">
             </div>
             <nav class="items">
                 <a href="index.html">Home</a>
                 <a href="#faq">FAQs</a>
                 <a href="index.html">Saiba Mais</a>
                 <div class="button-header">
-                <a href="#">Quero Alugar</a>
+                <a href="formulario.html">Quero Alugar</a>
             </div>
             </nav>
         </div>
     </header>
+    <section class="card-wrapper" id="cards">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+            
+        </div>
+    </section>
+
+
+    <footer>
+        <h3><b> 4CARS </b></h3>
+        <p> Siga-nos nas redes sociais!</p>
+        <span>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="https://pt-br.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://br.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+        </span>
+        <p>Info • Support • Marketing<br>Terms Of Use • Privacy Policy</p>
+        <p><b>@2022 Four Cars</b></p>
+
+    </footer>
 </body>
 </html>
