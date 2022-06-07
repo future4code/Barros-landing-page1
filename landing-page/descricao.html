@@ -5,9 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4cars</title>
-    <link rel="stylesheet" href="style.css">
-    
 </head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.header-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo img{
+    height: 10rem;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* display: grid;
+    grid-template-columns: repeat(5, 5rem); */
+}
+
+.items a {
+    color: black
+}
+
+.button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgba(231, 39, 39, 0.712);
+}
+/* termina o cabecalho le */
+
+
+/* comeca o footer vic */
+footer {
+    text-align: center;
+    background-color: rgba(231, 39, 39, 0.712);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #ea4c89;
+    color: white;
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+</style>
 <body>
     <header class="header-container">
         <div class="header-wrapper">
@@ -25,41 +119,7 @@
         </div>
     </header>
 
-    <main class="main-container">
-        <div class="about-us-container">
-            <div class="about-us-card">
-                <h1>Bem vinde ao 4cars</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <div class="saiba-mais">
-                    <a href="#cards"><p>Saiba mais</p></a>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="card-wrapper" id="cards">
-        <div class="card">
 
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-            
-        </div>
-    </section>
-
-    <div class="faq-title">
-        <h1>Perguntas Frequentes</h1>
-</div>
-
-
-    <section class="card-wrapper" id="faq">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-
-    </section>
-    
     <footer>
         <h3><b> 4CARS </b></h3>
         <p> Siga-nos nas redes sociais!</p>
@@ -74,6 +134,5 @@
         <p><b>@2022 Four Cars</b></p>
 
     </footer>
-    
 </body>
 </html>
