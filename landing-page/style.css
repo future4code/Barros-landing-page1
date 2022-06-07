@@ -8,11 +8,15 @@
 }
 
 .header-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
+    background-color:#fff
 }
 
 .header-wrapper {
@@ -67,7 +71,7 @@
 .about-us-container {
     /* border-radius: 10%; */
     border-top: 5px solid red;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,6 +100,11 @@
     background-color: rgba(231, 39, 39, 0.712);
 }
 
+.saiba-mais:hover {
+    background-color: rgba(231, 39, 39);
+    transition: 0.3s ease-in-out;
+}
+
 .saiba-mais a {
     color: #fff;
 
@@ -117,8 +126,72 @@
     height: 300px;
     width: 300px;
     background-color: rgba(19, 14, 14, 0.616);
+    cursor: pointer;
 
 } 
+
+.card:hover {
+    opacity: 90%;
+    transition: 0.5s ease-in-out;
+}
+
+.como-funciona-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.como-funciona-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+
+}
+
+.description-wrapper {
+    box-shadow: 5px 5px 5px darkgray;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    padding:2rem;
+    margin: 3rem;
+}
+
+.description {
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+
+}
+
+.description h3 {
+    align-items: center;
+    justify-content: center;
+    padding:1rem 0;
+
+}
+
+.number-box {
+    width: 50px;
+    height: 50px;
+    border-radius:  100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(231, 39, 39, 0.712);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1e1e2a;
+    transition:  0.5s ease-in-out;
+}
 
 
 
