@@ -325,4 +325,8 @@ footer {
     #faq{
         display: none;
     } 
+
+    footer {
+        font-size:10px;
+    }
 }
