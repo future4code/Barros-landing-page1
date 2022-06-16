@@ -151,7 +151,11 @@ footer {
         font-size: 80%;
     }
     #logo{
-        width: 120%;
+        width: 90px;
+        height: 90px;
+    }
+    .items{
+        gap: 1rem;
     }
    #faq{
        display: none;
