@@ -56,6 +56,11 @@
     color: black
 }
 
+.common-items:hover{
+    transition: 0.3s;
+    color: rgba(231, 39, 39, 0.712);
+}
+
 .button-header {
     display: flex;
     justify-content: center;
@@ -65,6 +70,12 @@
     border-radius: 10%;
     background-color: rgba(231, 39, 39, 0.712);
 }
+
+.button-header:hover {
+    transition: 0.3s;
+    background-color: rgba(231, 39, 39);
+}
+
 
 /* FINAL CABECARIO LE */
 
@@ -186,11 +197,11 @@ footer {
                 <img id="logo" src="img/4cars-fundo-transparente.png" alt="logo">
             </div>
             <nav class="items">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="common-items">Home</a>
 
-                <a id="faq" href="index.html#description-id">FAQs</a>
+                <a id="faq" href="index.html#description-id" class="common-items">FAQs</a>
 
-                <a href="formulario.html">Cadastre-se</a>
+                <a href="formulario.html" class="common-items">Cadastre-se</a>
 
 
                 <div class="button-header">

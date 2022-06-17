@@ -44,6 +44,11 @@
     color: black
 }
 
+.common-items:hover{
+    transition: 0.3s;
+    color: rgba(231, 39, 39, 0.712);
+}
+
 .button-header {
     display: flex;
     justify-content: center;
@@ -52,6 +57,11 @@
     width: 100px;
     border-radius: 10%;
     background-color: rgba(231, 39, 39, 0.712);
+}
+
+.button-header:hover {
+    transition: 0.3s;
+    background-color: rgba(231, 39, 39);
 }
 
 .main-container {
@@ -121,7 +131,7 @@
     gap: 50px;
     width: 100%;
     min-height: 50vh;
-    padding: 1rem;
+    padding: 0rem;
 }
 
  .card {
@@ -315,7 +325,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 970px) {
     .about-us-card {
         font-size:12px;
         text-align: center;
