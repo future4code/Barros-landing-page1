@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color:#fff
+}
+
+.header-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo img{
+    height: 10rem;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* display: grid;
+    grid-template-columns: repeat(5, 5rem); */
+}
+
+.items a {
+    color: black
+}
+
+.common-items:hover{
+    transition: 0.3s;
+    color: rgba(231, 39, 39, 0.712);
+}
+
+.button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgba(231, 39, 39, 0.712);
+}
+
+.button-header:hover {
+    transition: 0.3s;
+    background-color: rgba(231, 39, 39);
+}
+
+.main-container {
+    background-image: url(img/10109.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+    /* background-color: rgb(235, 60, 60); */
+}
+
+
+.about-us-container {
+    /* border-radius: 10%; */
+    border-top: 5px solid red;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    color: #fff;
+    background-color: rgba(19, 14, 14, 0.616);
+    min-width: 300px
+}
+
+.about-us-card {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+}
+
+.saiba-mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgba(231, 39, 39, 0.712);
+}
+
+.saiba-mais:hover {
+    background-color: rgba(231, 39, 39);
+    transition: 0.3s ease-in-out;
+}
+
+.saiba-mais a {
+    color: #fff;
+
+}
+
+ .card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    min-height: 50vh;
+    padding: 0rem;
+}
+
+ .card {
+    border-top: 5px solid red;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    
+
+} 
+.card-promocao{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    border-top: 5px solid red;
+    height: 400px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+    text-align: center;
+    color: white;
+}
+.promocao{
+    color: orange;
+    font-style: italic;
+}
+.card:hover {
+    opacity: 90%;
+    transition: 0.5s ease-in-out;
+}
+
+.como-funciona-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.como-funciona-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+
+}
+
+.description-wrapper {
+    box-shadow: 5px 5px 5px darkgray;
+    display: grid;
+    letter-spacing:2px;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    padding:3rem;
+    margin: 3rem;
+}
+
+.description {
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+
+}
+
+.description h3 {
+    align-items: center;
+    justify-content: center;
+    padding:1rem 0;
+
+}
+
+.number-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(231, 39, 39, 0.712);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1e1e2a;
+    transition:  0.5s ease-in-out;
+}
+
+
+
+.faq-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    min-height: 50vh;
+    padding: 2rem;
+
+}
+
+.faq-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.faq-card {
+    border-top: 5px solid red;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+}
+
+/* footer vic */
+footer {
+    text-align: center;
+    background-color: rgba(231, 39, 39, 0.712);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #ea4c89;
+    color: white;
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+
+@media screen and (max-width: 1050px) {
+    .description-wrapper{
+        display: block;
+        /* box-shadow: none; */
+        letter-spacing:2px;
+        /* min-width: 100vw; */
+        text-align: center;
+    }
+
+    .number-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 450px ){
+    .description-wrapper {
+        min-width: 100vw; 
+        box-shadow: none;
+    }
+    
+}
+
+@media screen and (max-width: 650px) and (min-width:550px){
+    .about-us-card {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .about-us-card {
+        font-size:12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 667px) and (min-width:200px){
+    .header-container{
+        font-size:80%;
+    }
+
+    .items{
+        gap: 1rem;
+    }
+
+
+    .site-logo img {
+        /* display: none; */
+        width: 90px;
+        height: 90px;
+
+    }
+
+    #faq{
+        display: none;
+    } 
+   
+    footer {
+        font-size:10px;
+        
+    }
+  
+}

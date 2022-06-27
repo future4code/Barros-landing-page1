@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4cars</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color:#fff
+    
+}
+
+.header-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo img{
+    height: 10rem;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* display: grid;
+    grid-template-columns: repeat(5, 5rem); */
+}
+
+.items a {
+    color: black
+}
+
+.common-items:hover{
+    transition: 0.3s;
+    color: rgba(231, 39, 39, 0.712);
+}
+
+.button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 100px;
+    border-radius: 10%;
+    background-color: rgba(231, 39, 39, 0.712);
+}
+
+.button-header:hover {
+    transition: 0.3s;
+    background-color: rgba(231, 39, 39);
+}
+
+
+/* FINAL CABECARIO LE */
+
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+    
+}
+
+ .card {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    border-top: 5px solid red;
+    height: 400px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+    text-align: center;
+    color: white;
+   
+
+} 
+.card-promocao{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    border-top: 5px solid red;
+    height: 400px;
+    width: 300px;
+    background-color: rgba(19, 14, 14, 0.616);
+    background-image: url(img/mes-namorados.png);
+    text-align: center;
+    color: white;
+}
+.valores{
+    color: yellow;
+}
+.promocao{
+    color: orange;
+    font-style: italic;
+}
+
+
+
+/* INICIO FOOTER */
+
+footer {
+    text-align: center;
+    background-color: rgba(231, 39, 39, 0.712);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #ea4c89;
+    color: white;
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+@media screen and (min-device-width: 200px) and (max-device-width: 667px) {
+    .header-container{
+        font-size: 80%;
+    }
+    #logo{
+        width: 90px;
+        height: 90px;
+    }
+    .items{
+        gap: 1rem;
+    }
+   #faq{
+       display: none;
+   }
+
+   footer{
+       font-size: 10px;
+   }
+   .fa{
+    padding: 5%;
+    width: 20%;
+   }
+}
+</style>
+<body>
+    <header class="header-container">
+        <div class="header-wrapper">
+            <div class="site-logo">
+                <img id="logo" src="img/4cars-fundo-transparente.png" alt="logo">
+            </div>
+            <nav class="items">
+                <a href="index.html" class="common-items">Home</a>
+
+                <a id="faq" href="index.html#description-id" class="common-items">FAQs</a>
+
+                <a href="formulario.html" class="common-items">Cadastre-se</a>
+
+
+                <div class="button-header">
+                <a href="descricao.html">Quero Alugar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    </section>
+    <section class="card-wrapper" id="cards">
+        
+        <div class="card-promocao">
+            <div>
+            
+            <img src="img/mes4.png" alt="promocao" width="60%">
+            </div>
+            <div>
+                <p class="promocao">Alugue 3 dias e ganhe 1</p>
+                <p>sem limite de KM <br>
+                carros COMPLETOS</p>
+                    <p class="promocao"> Linha Ouro</p>
+                    <p>Promoções semanais apartir de R$:500,00</p>
+                    <p class="promocao"> Linha Platina</p>
+                    <p>Promoções semanais <br>
+                    apartir de R$:550,00</p>
+
+            </div>
+        </div>
+        
+        <div class="card">
+            <div>
+                <b><h3>Linha Ouro</h3></b>
+            <h3>Diárias</h3>
+            <img src="img/ouro-sem-fundo.png" alt="carros-ouro" width="180px">
+            <h4>Argo/Ônix</h4>
+            </div>
+           <div>
+           <p>Para quem busca econômia sem abrir mão do conforto </p>
+           Diárias apartir de:
+           <p class="promocao">R$:85,00 </p>
+            <ul>
+                <li>Carros COMPLETOS</li>
+                <li>Sem limite de kilometragem</li>
+                <li>Seguro Total com guincho 24h</li>
+            </ul>
+           </div>
+
+        </div>
+        <div class="card">
+            <div>
+            <b><h3>Linha Ouro</h3></b>
+            <h3>Plano Semanal</h3>
+            <img src="img/ouro-sem-fundo.png" alt="carros-ouro" width="180px">
+            <h4>Argo/Ônix</h4>
+            </div>
+            <div>
+            <p>Para quem busca viajens ou até mesmo trabalhar com conforto
+                e econômia.</p>
+                <p> Semana apartir de:</p>
+                <p class="promocao">R$:550,00</p>
+                Com todas as vantagens de ser Ouro 
+                Tento o conforto e AINDA MAIS ECONÔMIA
+
+            </div>
+        </div>
+    </section>
+
+    <section class="card-wrapper" id="cards">
+      
+        <div class="card">
+            <div>
+            <b><h3>Linha Platina</h3></b>
+            <h3>Sedan</h3>
+            <img src="img/premium-sem-fundo.png" alt="carros-linha-platina" width="200px" height="">
+            <h4>Grand Siena/Cobalt</h4>
+            </div>
+
+            <div>
+                Para quem busca viajar com espaço e segurança
+                <p class="promocao">Diárias Semanal e Mensal</p>
+                Diárias apartir de:
+                <p class="promocao"> R$:90,00</p>
+                <p>Carros COMPLETOS</p>
+                <p>Seguro total com guincho 24h</p>
+                <p>Central Multimidia</p>
+                <p>Temos opções com GNV</p>
+            </div>
+        </div>
+        <div class="card">
+           <div>
+            <b><h3>Linha Diamante</h3></b>
+            <h3>SUV</h3>
+            <img src="img/platina-sem-fundo.png" alt="carros-linha-diamante" width="200px">
+            <h4>Hilux SW4/Peugeot 3008</h4>
+           </div>
+           <div>
+               Para quem busca uma experiência diferente
+               <p class="promocao"> Conforto Espaço Segurança com LUXO</p>
+               Entre em contato e conheça os planos <br>
+               <p class="promocao"> Diárias Semanal e Mensal</p>
+           </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <h3><b> 4CARS </b></h3>
+        <p> Siga-nos nas redes sociais!</p>
+        <span>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="https://pt-br.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://br.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+        </span>
+        <p>Info • Support • Marketing<br>Terms Of Use • Privacy Policy</p>
+        <p><b>@2022 Four Cars</b></p>
+
+    </footer>
+</body>
+</html>
